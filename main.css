@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 90px;
+    background-color: grey;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+body {
+    background-size: cover;
+    background-image: url('');
+    overflow: unset;
+}
+
+.block-btn {
+    width: 687px;
+}
+
+.block-btn,
+.block-btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.code {
+    border-radius: 4px;
+}
+
+.code:disabled {
+    background-color: rgba(255, 255, 255, 0.722);
+}
+
+button,
+.select button {
+    width: 49px;
+    height: 37px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: white;
+    z-index: 1;
+}
+
+button img {
+    width: 18px;
+    height: 18px;
+}
+
+button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+button:last-child,
+.background,
+.createUl {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.font,
+.align,
+.createBtns {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.722);
+}
+
+button:focus,
+.font-family:focus {
+    border: none;
+    box-shadow: 0 0 0 3px rgba(203, 203, 203, 0.838);
+    background-color: rgba(255, 255, 255, 0.722);
+    z-index: 0;
+}
+
+.text {
+    margin: 50px 10px 0 50px;
+    font-size: 18px;
+    text-align: left;
+    overflow: unset;
+    overflow: auto;
+    height: 660px;
+}
+
+.text li:hover {
+    background-color: unset;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.font {
+    margin: 0px auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.maximize {
+    width: 13px;
+    height: 13px;
+    margin-top: -2px;
+}
+
+ul {
+    z-index: 1;
+    box-shadow: 0 0 3px lightgray;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+.first-ul {
+    top: 70px;
+    left: 657px;
+    width: 201px;
+    display: none;
+}
+
+.second-ul li:last-child {
+    margin-bottom: 4px;
+}
+
+.second-ul {
+    top: 70px;
+    left: 728px;
+    padding-left: 32px;
+    width: 169px;
+    display: none;
+}
+
+.selectInHeader li {
+    list-style-type: none;
+    height: 40px;
+    margin-left: -32px;
+    background-color: white;
+}
+
+.first-ul li {
+    width: 201px;
+    font-size: 17px;
+}
+
+.second-ul li {
+    width: 169px;
+    margin-left: -32px;
+}
+
+.page1 li p {
+    padding-left: 23px;
+    line-height: 40px;
+    margin: 0;
+}
+
+header li:hover {
+    background-color: rgb(244, 243, 243);
+}
+
+.arrow {
+    width: 17px;
+    height: 17px;
+    margin-top: -4px;
+}
+
+.select button {
+    font-size: 17px;
+}
+
+.font-size span {
+    margin-left: 7px;
+}
+
+.font-size {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+}
+
+.lock,
+.unlock {
+    margin-left: 12px;
+    border-radius: 4px;
+}
+
+.unlockIcon {
+    display: none;
+    margin: 0px 0px 0px 15px;
+}
+
+.colors,
+.colors1,
+.background-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block-color,
+.block-color1,
+.background-image {
+    width: 70px;
+    height: 75px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#exampleModal {
+    margin: 5px;
+}
+
+.turquoise {
+    background-color: turquoise;
+}
+
+.dark-turquoise {
+    background-color: #06bfad;
+}
+
+.lightgreen {
+    background-color: #3ad772;
+}
+
+.green {
+    background-color: #0eb467;
+}
+
+.lightskyblue {
+    background-color: #35a2e6;
+}
+
+.blue {
+    background-color: #3c83db;
+}
+
+.mediumpurple {
+    background-color: #ce7cf0;
+}
+
+.mediumorchid {
+    background-color: #c858e4;
+}
+
+.bluegray2 {
+    background-color: rgb(93 108 123);
+}
+
+.bluegray1 {
+    background-color: #577797;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange1 {
+    background-color: #f0bf0e;
+}
+
+.orange2 {
+    background-color: #fca300;
+}
+
+.orange3 {
+    background-color: rgb(255 149 41);
+}
+
+.orange4 {
+    background-color: #ff7322;
+}
+
+.red1 {
+    background-color: #fc5a1c;
+}
+
+.red2 {
+    background-color: rgb(228 84 30);
+}
+
+.whitesmoke {
+    background-color: whitesmoke;
+}
+
+.lightgray {
+    background-color: lightgray;
+}
+
+.gray1 {
+    background-color: rgb(174 203 194);
+}
+
+.gray2 {
+    background-color: #9bb8b6;
+}
+
+.black {
+    background-color: #000000d6;
+}
+
+.colors1 {
+    margin: 8px;
+}
+
+.colors {
+    margin: 0px 8px 8px 8px;
+}
+
+.modal button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.nav-item {
+    margin: 0px;
+}
+
+.nav-item button {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.colors1,
+.background-images {
+    margin-top: 60px;
+}
+
+.nav-link {
+    width: 150px;
+}
+
+.nav li {
+    height: 30px;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav {
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.btn-close {
+    font-size: 12px;
+}
+
+#myTab {
+    width: 100%;
+    margin-left: -16px;
+    height: 50px;
+}
+
+#exampleModal .modal-body {
+    padding-top: 0px;
+
+}
+
+#exampleModal #files .modal-body {
+    margin-bottom: 0;
+}
+
+#colors-tab {
+    width: 88px;
+    height: 50px;
+}
+
+#images-tab,
+#files-tab,
+#colors-tab {
+    width: 88px;
+    height: 50px;
+}
+
+#images {
+    padding: 16px;
+}
+
+.background-image {
+    width: 150px;
+    height: 72px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.block1 {
+    background-image: url('./ img/macos-big-sur-updated-wallpapers-1.jpg');
+}
+
+.block3 {
+    background-image: url('./ img/macos-big-sur-updated-wallpapers-7.jpg');
+}
+
+.block2 {
+    background-image: url('./ img/Free-Summer-Wallpapers-For-Desktop.jpg');
+}
+
+.block4 {
+    background-image: url('./ img/macos-big-sur-wallpaper-8-1536x1536.jpg');
+}
+
+.block5 {
+    background-image: url('./ img/get-beautiful-new-el-capitan-wallpaper-for-your-mac-iphone.w1456.jpg');
+}
+
+.block6 {
+    background-image: url('./ img/macos-big-sur-daylight-wallpaper-6-scaled-1.jpg');
+}
+
+.block7 {
+    background-image: url('./ img/wp8030435.jpg');
+}
+
+.block8 {
+    background-image: url('./ img/macos-big-sur-wallpaper-15-1536x1536.jpg');
+}
+
+.block9 {
+    background-image: url('./ img/wp6481541.jpg');
+}
+
+.input-group {
+    margin-top: 60px;
+    display: flex;
+}
+
+.login,
+.password {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 10px;
+
+}
+
+.password,
+.signIn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.signIn {
+    margin-bottom: 15px;
+}
+
+#modal3,
+#modal4 {
+    margin-top: 6px;
+}
+
+#modal3 .modal-title {
+    font-size: 25px;
+}
+
+.error1,
+.error2,
+.errorT,
+.errorList {
+    color: red;
+    margin-top: 10px;
+    display: none;
+    margin-bottom: 0;
+}
+
+.errorT {
+    margin-top: 0px;
+}
+
+.page2 {
+    display: none;
+}
+
+.blockInnerHtml {
+    padding: 10px;
+    width: 100%;
+    height: 689px;
+    resize: none;
+    border: none;
+    font-size: 18px;
+}
+
+.blockInnerHtml:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.reset,
+.create {
+    width: 378px;
+}
+
+.formbtns {
+    margin: 15px 0 20px 0;
+}
+
+.list-btns {
+    margin: 31px 0 15px 0;
+}
+
+.formbtns,
+.list-btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#fTable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#fTable input {
+    width: 378px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+#fTable span {
+    margin-bottom: 7px;
+}
+
+.selectOption {
+    width: 185px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+#fTable .form-select {
+    width: 185px;
+}
+
+.s,
+.blockList {
+    display: flex;
+    flex-direction: column;
+}
+
+.s {
+    margin-bottom: 20px;
+}
+
+.fselects {
+    width: 378px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inpFile {
+    opacity: 0;
+    z-index: 2;
+}
+
+table {
+    margin: 0;
+}
+
+#modal3-2 button {
+    width: 140px;
+    height: 41px;
+}
+
+#modal3-2 .modal-body,
+.fOl-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#modal3-2 {
+    margin-top: 307px;
+}
+
+.list-btns button {
+    width: 244px;
+    height: 36px;
+}
+
+.blockList {
+    margin-bottom: 20px;
+}
+
+.blockList span {
+    margin-bottom: 8px;
+}
+
+.selectList {
+    width: 100%;
+}
+
+.modal-dialog select {
+    color: gray;
+}
+
+.newList {
+    list-style-position: inside;
+    height: auto;
+    margin-left: 30px;
+    background-color: unset;
+    box-shadow: none;
+    position: static;
+    border-radius: 0;
+    padding: 0;
+}
+
+.btnCloseModal {
+    display: none;
+}
+
+.block-browse {
+    height: 38px;
+    width: 478px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    background-color: white;
+    line-height: 36px;
+    padding-left: 10px;
+    border: 1px solid #dee2e6;
+    color: gray;
+}
+
+#files label.focus {
+    box-shadow: 0 0 0 2px rgba(140, 201, 255, 0.838);
+}
+
+#files .input-group {
+    margin-top: 70px;
+}
+
+.modal-header .btn-close {
+    font-size: 12px;
+}
+
+#exampleModal .btn-close {
+    margin-right: -5px;
+    width: 12px;
+}
+
+#exampleModal1 .btn-close {
+    margin-right: 1px;
+    width: 12px;
+}

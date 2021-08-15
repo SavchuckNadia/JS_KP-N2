@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <div class="page1">
+        <header>
+            <div class="block-btn">
+                <button class="code" disabled type="button"><img src="./ img/code.svg" alt=""> </button>
+                <div class="font">
+                    <button class="bold" type="button"><img src="./ img/bold.svg" alt=""></button>
+                    <button class="i" type="button"><img src="./ img/italic-solid.svg" alt=""></button>
+                    <button  class="underline"  type="button"><img src="./ img/underline-solid.svg" alt=""></button>
+                    <button class="line-through" type="button"><img src="./ img/strikethrough-solid.svg" alt=""></button>
+                </div>
+                <div class="align">
+                    <button class="align-left" type="button"><img src="./ img/align.svg" alt=""></button>
+                    <button class="align-center" type="button"><img src="./ img/align (1).svg" alt=""></button>
+                    <button class="align-right" type="button"><img src="./ img/align (2).svg" alt=""></button>
+                </div>
+                <div class="selects">
+                    <div class="select">
+                        <button class="font-family"><span>A</span> <img class="arrow" src="./ img/arrow.svg" alt=""></button>
+                        <button class="font-size"><span>T<img class="maximize" src="./ img/maximize 1.svg" alt=""></span> <img src="./ img/arrow.svg" alt=""></button>
+                        <button class=" text-color" data-bs-toggle="modal" data-bs-target="#exampleModal1" ><img src="./ img/color-palette.svg"  alt=""></button>
+                        <button class="background"data-bs-toggle="modal" data-bs-target="#exampleModal" ><img src="./ img/image-solid.svg" alt=""></button> 
+                        <div class="modal fade modal2" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div  class="modal-dialog modal-lg" style="max-width: 40%;" role="document" >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Choose text color</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="colors">
+                                        <div class="turquoise block-color"></div>
+                                        <div class="dark-turquoise block-color"></div>
+                                        <div class="lightgreen block-color"></div>
+                                        <div class="green block-color"></div>
+                                        <div class="lightskyblue block-color"></div>
+                                        <div class="blue block-color"></div>
+                                        <div class="mediumpurple block-color"></div>
+                                        <div class="mediumorchid block-color"></div>
+                                        <div class="bluegray1 block-color"></div>
+                                        <div class="bluegray2 block-color"></div>
+                                        <div class="orange1 yellow block-color"></div>
+                                        <div class="orange2 block-color"></div>
+                                        <div class="orange3 block-color"></div>
+                                        <div class="orange4 block-color"></div>
+                                        <div class="red1 block-color"></div>
+                                        <div class="red2 block-color"></div>
+                                        <div class="whitesmoke block-color"></div>
+                                        <div class="lightgray block-color"></div>
+                                        <div class="gray1 block-color"></div>
+                                        <div class="gray2 block-color"></div>
+                                        <div class="black block-color"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                       <div class="modal fade modal2" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div  class="modal-dialog modal-lg" style="max-width: 41%;" role="document" >
+                        <div class="modal-content">
+                            <div style="border-bottom:1px solid lightgray;" class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Choose background color or image</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="colors-tab" data-bs-toggle="tab" data-bs-target="#colors" type="button" role="tab" aria-controls="home" aria-selected="true">Colors</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="images-tab" data-bs-toggle="tab" data-bs-target="#images" type="button" role="tab" aria-controls="images" aria-selected="false">Images</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="files-tab" data-bs-toggle="tab" data-bs-target="#files" type="button" role="tab" aria-controls="files" aria-selected="false">Files</button>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="colors" role="tabpanel" aria-labelledby="colors-tab">
+                                        <div class="colors1">
+                                            <div class="turquoise block-color1"></div>
+                                            <div class="dark-turquoise block-color1"></div>
+                                            <div class="lightgreen block-color1"></div>
+                                            <div class="green block-color1"></div>
+                                            <div class="lightskyblue block-color1"></div>
+                                            <div class="blue block-color1"></div>
+                                            <div class="mediumpurple block-color1"></div>
+                                            <div class="mediumorchid block-color1"></div>
+                                            <div class="bluegray1 block-color1"></div>
+                                            <div class="bluegray2 block-color1"></div>
+                                            <div class="orange1 yellow block-color1"></div>
+                                            <div class="orange2 block-color1"></div>
+                                            <div class="orange3 block-color1"></div>
+                                            <div class="orange4 block-color1"></div>
+                                            <div class="red1 block-color1"></div>
+                                            <div class="red2 block-color1"></div>
+                                            <div class="whitesmoke block-color1"></div>
+                                            <div class="lightgray block-color1"></div>
+                                            <div class="gray1 block-color1"></div>
+                                            <div class="gray2 block-color1"></div>
+                                            <div class="black block-color1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="images" role="tabpanel"  aria-labelledby="images-tab">
+                                        <div class="background-images">
+                                            <div class="background-image block1"></div>
+                                            <div class="background-image block2"></div>
+                                            <div class="background-image block3"></div>
+                                            <div class="background-image block4"></div>
+                                            <div class="background-image block5"></div>
+                                            <div class="background-image block6"></div>
+                                            <div class="background-image block7"></div>
+                                            <div class="background-image block8"></div>
+                                            <div class="background-image block9"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="files-tab">
+                                        <div class="input-group mb-3">
+                                            <input style="opacity: 0; z-index: 2;" type="file" class="form-control inpFile" id="inputGroupFile02">
+                                            <label style="border-bottom-left-radius: 4px;border-top-left-radius: 4px;" class="block-browse">Choose file...</label>
+                                            <label for="inputGroupFile02" class="input-group-text" >Browse</label>
+                                        </div>
+                                    </div>
+                                  </div> 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <ul class="first-ul selectInHeader">
+                        <li><p class="fontFamily">Arial</p></li>
+                        <li><p class="fontFamily">Georgia</p></li>
+                        <li><p class="fontFamily">Impact</p> </li>
+                        <li><p class="fontFamily" >Tahoma</p></li>
+                        <li><p class="fontFamily" >Times New Roman</p></li>
+                        <li><p class="fontFamily">Verdana</p></li>
+                    </ul>
+                    <ul class="second-ul selectInHeader">
+                        <li><p class="fontSize">12px</p></li>
+                        <li><p class="fontSize">14px</p></li>
+                        <li><p class="fontSize">16px</p> </li>
+                        <li><p class="fontSize" >18px</p></li>
+                        <li><p class="fontSize" >20px</p></li>
+                        <li><p class="fontSize">22px</p></li>
+                        <li><p class="fontSize">25px</p></li>
+                        <li><p class="fontSize">30px</p></li>
+                    </ul>
+                </div>
+            </div> 
+        <button class="lock"  data-bs-toggle="modal" data-bs-target="#modal3">
+            <img  class="lockIcon" src="./ img/lock-solid.svg" alt="">
+            <img class="unlockIcon"  src="./ img/unlock-solid.svg" alt="">
+        </button> 
+        <div class="modal fade modal3" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+          <div class="modal-dialog" style= "max-width: 37%;" role="document">
+            <div class="modal-content">
+              <div class="modal-header modal-header">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <h5  class="modal-title  " id="exampleModalLabel3">Sign In</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-body">
+              <form  class="f1" name="f1">
+                  <input class="login form-control" type="text" name="login" placeholder="Login here..." id="">
+                  <input  type="password" class="password form-control"  name="password" placeholder="Password here..." id="">
+                  <p class="error1 errorLogin">Value is empty</p>
+                  <p class="error2 errorLogin">Please check your login or password</p>
+                  <button type="submit" data-dismiss="modal"  class="btn btn-secondary signIn ">Sign In</button>
+                  <button  type="button" class="btnCloseModal" data-bs-dismiss="modal">Cancel</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal3-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="max-width: 23%;" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn btn btn-dark cancel" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger signOut">Sign out</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        </header>
+        <div class="text">
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+        </div>
+    </div>
+    <div class="page2">
+        <header>
+            <div class="block-btn2">
+                <div class="createBtns">
+                    <button class="saveBtn" type="button"><img src="./ img/save-solid.svg" alt=""></button>
+                    <button class="createTable" type="button" data-bs-toggle="modal" data-bs-target="#modal4"><img src="./ img/table-solid.svg" alt=""></button>
+                    <div class="modal fade modal4" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header modal-header">
+                                 <h5  class="modal-title  " id="exampleModalLabel3">Create table</h5>
+                                 <button  type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="fTable" name="fTable">
+                                    <div class="s">
+                                        <span>Count TR:</span>
+                                        <input class="countTR form-control" type="text" name="countTR" id="" placeholder="Type here.."></input>
+                                    </div>
+                                   <div class="s">
+                                        <span>Count TD:</span><input class="countTD form-control" type="text" name="countTD" id="" placeholder="Type here..">
+                                   </div>
+                                    <div class="s">
+                                        <span>Width of TD:</span><input class="widthTD form-control" type="text" name="widthTD" id="" placeholder="Type here..">
+                                    </div>
+                                    <div class="s">
+                                        <span>Height of TD:</span><input class="heightTD form-control" type="text" name="heightTD" id="" placeholder="Type here..">
+                                    </div>
+                                    <div class="styleBorder">
+                                        <div class="s">
+                                            <span>Width of border:</span><input class="widthBorder form-control" type="text" name="widthBorder" id="" placeholder="Type here..">
+                                        </div>
+                                    </div>
+                                    <div class="fselects">
+                                        <div class="s">
+                                            <span>Type of border:</span>
+                                            <select style="width: 178px" class="selectOption form-select typeBorder" name="typeBorder" id="">
+                                                <option selected value="choose style">choose style</option>
+                                                <option value="dotted">dotted</option>
+                                                <option value="dashed">dashed</option>
+                                                <option value="solid">solid</option>
+                                                <option value="double">double</option>
+                                                <option value="groove">groove</option>
+                                                <option value="ridge">ridge</option>
+                                                <option value="inset">inset</option>
+                                                <option value="outset">outset</option>
+                                            </select>
+                                        </div>
+                                        <div class="s">
+                                            <span>Color of border: </span>
+                                        <select  style="width: 178px" class="selectOption form-select colorBorder" name="colorBorder" id="">
+                                            <option selected value="choose color">choose color</option>
+                                            <option value="black">black</option>
+                                            <option value="red">red</option>
+                                            <option value="green">green</option>
+                                            <option value="blue">blue</option>
+                                            <option value="yellow">yellow</option>
+                                            <option value="white">white</option>
+                                            <option value="gray">gray</option>
+                                            <option value="pink">pink</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <p class="errorT">invalid value</p>
+                                    <div class="formbtns">
+                                        <button  type="reset" data-dismiss="modal"  class="btn btn-danger reset ">Reset</button>
+                                        <button type="button" data-dismiss="modal"  class="btn btn-success  create">Create table</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                    <button class="createOl" data-bs-toggle="modal" data-bs-target="#modal5" type="button"><img src="./ img/list-ol-solid.svg" alt=""></button>
+                    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" style="max-width: 37%;" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create Ol</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <form id="fOl" name="fOl">
+                                <div class="blockList">
+                                    <span>Count li item:</span>
+                                    <input class=" form-control coutOl" type="text" name="" id="" placeholder="Type here.."></input>
+                                </div>
+                                <div class="blockList">
+                                    <span>Type mark of list: </span>
+                                    <select class="form-select typeMarkOl" name="typeMark-Ol" id="">
+                                        <option selected value="choose Ol type mark">choose Ol type mark</option>
+                                        <option value="decimal">1</option>
+                                        <option value="upper-roman">|</option>
+                                        <option value="lower-roman">i</option>
+                                        <option value="upper-alpha">A</option>
+                                        <option value="lower-alpha">a</option>
+                                    </select>
+                                </div>
+                                <p class=" errorList errorMessageO">invalid value</p>
+                                <div class="list-btns">
+                                    <button  type="reset" data-dismiss="modal" id="resetO" class="btn btn-danger resetList ">Reset</button>
+                                    <button id="Ol" type="button" data-dismiss="modal"  class="btn btn-success  createList">Create list</button>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    <button class="createUl"   data-bs-toggle="modal" data-bs-target="#modal6" type="button"><img src="./ img/list-ul-solid.svg" alt=""></button>
+                    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" style="max-width: 37%;" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create Ul</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <form id="fUl" name="fUl">
+                                <div class="blockList">
+                                    <span>Count li item:</span>
+                                    <input class="form-control countUl" type="text" name="countLi" id="" placeholder="Type here.."></input>
+                                </div>
+                                <div class="blockList">
+                                    <span>Type mark of list: </span>
+                                    <select class="form-select typeMarkUl" name="typeMark-Ul" id="">
+                                        <option selected value="choose Ul type mark">choose Ul type mark</option>
+                                        <option value="circle">circle</option>
+                                        <option value="disc">disc</option>
+                                        <option value="square">square</option>
+                                    </select>
+                                </div>
+                                <p class="errorMessageU errorList">invalid value</p>
+                                <div class="list-btns">
+                                    <button  type="reset" data-dismiss="modal"  id="resetU" class="btn btn-danger  resetList ">Reset</button>
+                                    <button type="button" id="Ul" data-dismiss="modal"  class="btn btn-success  createList">Create list</button>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div> 
+        </header>
+        <textarea  class="blockInnerHtml"  name="blockInnerHtml" id="" cols="90" rows="10"></textarea>
+    </div>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
